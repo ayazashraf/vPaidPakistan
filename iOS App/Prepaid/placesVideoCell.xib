@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="placesVideoCell" id="gTV-IL-0wX" customClass="placesVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="82"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JfB-97-m3g">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="82"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </webView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JfB-97-m3g" secondAttribute="bottom" id="BC9-cj-Hvs"/>
+                <constraint firstItem="JfB-97-m3g" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ctf-Qj-u5O"/>
+                <constraint firstItem="JfB-97-m3g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FYf-sh-2LR"/>
+                <constraint firstAttribute="trailing" secondItem="JfB-97-m3g" secondAttribute="trailing" id="waH-1C-Jgr"/>
+            </constraints>
+            <connections>
+                <outlet property="videoThumbnailWebView" destination="JfB-97-m3g" id="Ydl-hn-Jdj"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
